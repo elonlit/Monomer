@@ -117,7 +117,7 @@ The artifact can be found at maven central (NOT YET!!!!):
 
 If you use [Monomer](https://chemlib.readthedocs.io/en/latest/index.html) in your scientific work, please consider citing:
 
-|     E. Litman, *Monomer* - An object-oriented bioinformatics library, 2022\-- . Available at:
+|     E. Litman, *Monomer* - An object-oriented cheminformatics library, 2022\-- . Available at:
 [https://github.com/elonlit/monomer](https://github.com/elonlit/monomer).
 
 The reference in the [BibLaTeX](https://www.ctan.org/pkg/biblatex?lang=en) format:
@@ -125,7 +125,7 @@ The reference in the [BibLaTeX](https://www.ctan.org/pkg/biblatex?lang=en) forma
 ```{.sourceCode .latex}
 @software{monomer2022,
    author = {Litman, Elon},
-   title = {{Monomer} -- An object-oriented bioinformatics library},
+   title = {{Monomer} -- An object-oriented cheminformatics library},
    url = {https://github.com/elonlit/Monomer},
    version = {1.7},
    date = {2022--},
