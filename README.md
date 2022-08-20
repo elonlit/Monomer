@@ -115,7 +115,7 @@ The artifact can be found at maven central (NOT YET!!!!):
 
 ## Citing
 
-If you use [Monomer](https://chemlib.readthedocs.io/en/latest/index.html) in your scientific work, please consider citing:
+If you use [Monomer]() in your scientific work, please consider citing:
 
 |     E. Litman, *Monomer* - An object-oriented cheminformatics library, 2022\-- . Available at:
 [https://github.com/elonlit/monomer](https://github.com/elonlit/monomer).
