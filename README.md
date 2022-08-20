@@ -1,4 +1,4 @@
-<h1 align="center">Monomer 🧬</h1>
+<h1 align="center">Monomer ⚗️</h1>
 
 <p align="center">
 A pure Java package for cheminformatics.
