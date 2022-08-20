@@ -2,8 +2,8 @@
 
 <p align="center">
 A pure Java package for cheminformatics.
-  </p>
-<br>
+</p>
+
 <div align="center">
   <!-- License -->
   <a href="https://github.com/elonlit/Monomer/LICENSE.txt">
@@ -12,10 +12,7 @@ A pure Java package for cheminformatics.
   <a href="https://javadoc.io/doc/io.github.elonlit/monomer">
     <img src="https://javadoc.io/badge2/io.github.elonlit/monomer/javadoc.svg" />
   </a>
-  <!-- Documentation Status -->
-<!-- Build Status -->
 </div>
-<br>
 
 <div align="center">
   <h3>
