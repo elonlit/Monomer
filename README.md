@@ -9,18 +9,23 @@ A pure Java package for cheminformatics.
   <a href="https://github.com/elonlit/Monomer/LICENSE.txt">
     <img src="https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000" />
   </a>
+  <a href="https://javadoc.io/doc/io.github.elonlit/monomer">
+    <img src="https://javadoc.io/badge2/io.github.elonlit/monomer/javadoc.svg" />
+  </a>
   <!-- Documentation Status -->
 <!-- Build Status -->
 </div>
 <br>
 
+<!--[![Maven Central](https://img.shields.io/maven-central/v/org.biojava/biojava-adam.svg?maxAge=600)](http://search.maven.org/#search%7Cga%7C1%7Corg.biojava)-->
+
 ## Installation
 
-The artifact can be found at maven central (NOT YET!!!!):
+The artifact can be found at Maven Central:
 
 ```xml
 <dependency>
-    <groupId>com.github.monomer</groupId>
+    <groupId>io.github.elonlit</groupId>
     <artifactId>monomer</artifactId>
     <version>1.7</version>
 </dependency>
@@ -61,7 +66,7 @@ The artifact can be found at maven central (NOT YET!!!!):
     * Quaternions
     * Gaussian Functions
 - Monomers
-    * Generic Monomer
+    * Base Monomer
     * DNA
     * RNA
     * Residues

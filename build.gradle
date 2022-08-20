@@ -1,19 +1,103 @@
+//plugins {
+//    id 'java-library'
+//    id 'maven-publish'
+//    id 'signing'
+//}
+
 plugins {
-    id 'java'
+    id 'java-library'
+    id 'groovy'
+    id 'maven-publish'
+    id 'signing'
 }
 
-group 'org.example'
-version '1.0-SNAPSHOT'
+apply plugin: "groovy"
+
+group 'io.github.elonlit'
+version '1.7'
 
 repositories {
     mavenCentral()
+    maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
 }
+sourceCompatibility = 1.8
 
 dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    implementation 'org.codehaus.groovy:groovy:3.0.8'
+    testImplementation platform("org.spockframework:spock-bom:2.0-groovy-2.5")
+    testImplementation 'org.spockframework:spock-core:2.0-groovy-3.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
 }
 
 test {
     useJUnitPlatform()
+}
+
+
+java {
+    withJavadocJar()
+    withSourcesJar()
+}
+
+publishing {
+    publications{
+
+        mavenJava(MavenPublication){
+
+            groupId = 'io.github.elonlit'
+            artifactId = 'monomer'
+            version = '1.7'
+            from components.java
+
+            pom {
+                name = 'Monomer'
+                description = 'An object-oriented cheminformatics library.'
+                url = 'https://github.com/elonlit/Monomer'
+                inceptionYear = '2022'
+
+                licenses {
+                    license {
+                        name = 'MIT License'
+                        url = 'http://www.opensource.org/licenses/mit-license.php'
+                    }
+                }
+                developers {
+                    developer {
+                        id = 'elonlit'
+                        name = 'Elon Litman'
+                        email = 'elonlit@gmail.com'
+                    }
+                }
+                scm {
+                    connection = 'scm:git:git:github.com/elonlit/Monomer.git'
+                    developerConnection = 'scm:git:ssh://github.com/elonlit/Monomer.git'
+                    url = 'https://github.com/elonlit/Monomer'
+                }
+            }
+        }
+    }
+
+    repositories {
+        maven {
+            name = "OSSRH"
+            url = "https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/"
+            credentials {
+                username = project.properties["ossrhUsername"]
+                password = project.properties["ossrhPassword"]
+            }
+        }
+    }
+}
+
+signing {
+    sign publishing.publications.mavenJava
+}
+
+tasks.withType(JavaCompile) {
+    options.release = 18
+}
+
+javadoc {
+    options.addBooleanOption('html5', true)
 }
