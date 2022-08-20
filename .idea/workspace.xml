@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d0c8d0b6-9ec5-405c-b61a-63cedb89a902" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/monomer/Chem/Core/Compound.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/monomer/Chem/Core/Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/monomer/Chem/Core/Element.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/monomer/Chem/Core/EmpiricalFormulaUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/monomer/Chem/Core/EquationBalancerUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/monomer/Chem/Core/Fraction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/monomer/Chem/Core/PeriodicTable.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/monomer/Chem/Core/VectorManipulationUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/monomer/Chem/Electrochemistry/GalvanicCell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/monomer/Chem/QuantumMechanics/Nucleus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/monomer/Chem/QuantumMechanics/PrimitiveBasis.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/monomer/Chem/QuantumMechanics/Wave.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/monomer/Chem/Reactions/Combustion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/monomer/Chem/Reactions/Reaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/monomer/Chem/Solutions/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/monomer/Chem/Solutions/pH.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/monomer/Monomers/DNA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/monomer/Monomers/Monomer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/monomer/Monomers/RNA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/monomer/Monomers/Residue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/monomer/Polymers/Seq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/monomer/Polymers/SeqInterface.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2DbpOouGCLmcM1S2h94ohSPpH09" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Elon/Downloads/Monomer",
+    "nodejs_package_manager_path": "npm"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Elon\Downloads\Monomer" />
+      <recent name="C:\Users\Elon\Downloads\Monomer\src\main\java" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d0c8d0b6-9ec5-405c-b61a-63cedb89a902" name="Changes" comment="" />
+      <created>1660977609020</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1660977609020</updated>
+      <workItem from="1660977611593" duration="963000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
