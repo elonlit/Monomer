@@ -12,6 +12,9 @@ A pure Java package for cheminformatics.
   <a href="https://javadoc.io/doc/io.github.elonlit/monomer">
     <img src="https://javadoc.io/badge2/io.github.elonlit/monomer/javadoc.svg" />
   </a>
+  <a href="https://search.maven.org/artifact/io.github.elonlit/monomer/1.7/jar">
+    <img src="https://img.shields.io/maven-central/v/io.github.elonlit/monomer" />
+  </a>
 </div>
 
 <div align="center">
@@ -38,9 +41,9 @@ The artifact can be found at Maven Central:
 
 ```xml
 <dependency>
-    <groupId>io.github.elonlit</groupId>
-    <artifactId>monomer</artifactId>
-    <version>1.7</version>
+  <groupId>io.github.elonlit</groupId>
+  <artifactId>monomer</artifactId>
+  <version>1.7</version>
 </dependency>
 ```
 
