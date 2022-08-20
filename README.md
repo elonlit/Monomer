@@ -1,7 +1,7 @@
 <h1 align="center">Monomer 🧬</h1>
 
 <p align="center">
-A pure Java package for bio-and-chem informatics.
+A pure Java package for cheminformatics.
   </p>
 <br>
 <div align="center">
