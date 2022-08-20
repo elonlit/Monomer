@@ -33,8 +33,6 @@ A pure Java package for cheminformatics.
   </h3>
 </div>
 
-<!--[![Maven Central](https://img.shields.io/maven-central/v/org.biojava/biojava-adam.svg?maxAge=600)](http://search.maven.org/#search%7Cga%7C1%7Corg.biojava)-->
-
 ## Installation
 
 The artifact can be found at Maven Central:
@@ -49,31 +47,30 @@ The artifact can be found at Maven Central:
 
 ## Features
 
-- Properties of all Elements
-- Compounds
+- [Properties of all Elements](https://javadoc.io/doc/io.github.elonlit/monomer/latest/io/github/monomer/Chem/Core/Element.html)
+- [Compounds](https://javadoc.io/doc/io.github.elonlit/monomer/latest/io/github/monomer/Chem/Core/Compound.html)
     * Formula
     * Molar Mass
     * Percentage Composition by Mass
     * Stoichiometric Amounts
-- Empirical Formulae
+- [Empirical Formulae](https://javadoc.io/doc/io.github.elonlit/monomer/latest/io/github/monomer/Chem/Core/EmpiricalFormulaUtil.html)
     * Empirical Formula by Percentage Composition
     * Combustion Analysis of Hydrocarbons
-- Chemical Reactions
-    * Formula
+- [Chemical Reactions](https://javadoc.io/doc/io.github.elonlit/monomer/latest/io/github/monomer/Chem/Reactions/package-summary.html)
     * Balancing the Equation
     * Combustion Reactions
     * Stoichiometric Amounts
     * Limiting Reagent
-- Aqueous Solutions
+- [Aqueous Solutions](https://javadoc.io/doc/io.github.elonlit/monomer/latest/io/github/monomer/Chem/Solutions/package-summary.html)
     * Solute
     * Molarity (mol/L)
     * Stoichiometric Amounts
     * Dilutions
-- Electrochemistry
+- [Electrochemistry](https://javadoc.io/doc/io.github.elonlit/monomer/latest/io/github/monomer/Chem/Electrochemistry/package-summary.html)
     * Galvanic (Voltaic) Cells
         * Anode, Cathode, Cell Potential
     * Electrolysis
-- Quantum Mechanics
+- [Quantum Mechanics](https://javadoc.io/doc/io.github.elonlit/monomer/latest/io/github/monomer/Chem/QuantumMechanics/package-summary.html)
     * Electromagnetic Waves
         * Frequency, Wavelength, Energy per photon
     * Energy in *n*th Hydrogen Orbital
@@ -82,12 +79,12 @@ The artifact can be found at Maven Central:
     * Vector Fields in Cylindrical and Spherical Coordinates
     * Quaternions
     * Gaussian Functions
-- Monomers
+- [Monomers](https://javadoc.io/doc/io.github.elonlit/monomer/latest/io/github/monomer/Monomers/package-summary.html)
     * Base Monomer
     * DNA
     * RNA
     * Residues
-- Polymers
+- [Polymers](https://javadoc.io/doc/io.github.elonlit/monomer/latest/io/github/monomer/Polymers/package-summary.html)
     * Generic Seq
 
 ### Elements
