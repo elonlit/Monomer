@@ -27,7 +27,7 @@ A pure Java package for cheminformatics.
       Report a Bug
     </a>
     <span> | </span>
-    <a href="https://github.com/harirakul/chemlib/pulls">
+    <a href="https://github.com/elonlit/monomer/pulls">
       Submit a Pull Request
 </a>
   </h3>
