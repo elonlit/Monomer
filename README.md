@@ -17,6 +17,22 @@ A pure Java package for cheminformatics.
 </div>
 <br>
 
+<div align="center">
+  <h3>
+    <a href="https://javadoc.io/doc/io.github.elonlit/monomer/">
+      Documentation
+    </a>
+    <span> | </span>
+    <a href="https://github.com/elonlit/monomer/issues">
+      Report a Bug
+    </a>
+    <span> | </span>
+    <a href="https://github.com/harirakul/chemlib/pulls">
+      Submit a Pull Request
+</a>
+  </h3>
+</div>
+
 <!--[![Maven Central](https://img.shields.io/maven-central/v/org.biojava/biojava-adam.svg?maxAge=600)](http://search.maven.org/#search%7Cga%7C1%7Corg.biojava)-->
 
 ## Installation
@@ -63,6 +79,7 @@ The artifact can be found at Maven Central:
     * Energy in *n*th Hydrogen Orbital
     * Rydberg Equation
     * Nuclear-nuclear Repulsions
+    * Vector Fields in Cylindrical and Spherical Coordinates
     * Quaternions
     * Gaussian Functions
 - Monomers

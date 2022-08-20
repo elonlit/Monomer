@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0c8d0b6-9ec5-405c-b61a-63cedb89a902" name="Changes" comment="Add docs">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="d0c8d0b6-9ec5-405c-b61a-63cedb89a902" name="Changes" comment="Release 1.7">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +118,7 @@
       <option name="presentableId" value="Default" />
       <updated>1660977609020</updated>
       <workItem from="1660977611593" duration="4591000" />
-      <workItem from="1661023182315" duration="2936000" />
+      <workItem from="1661023182315" duration="4151000" />
     </task>
     <task id="LOCAL-00001" summary="Cleaning up...">
       <created>1660978610783</created>
@@ -145,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660979732995</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Release 1.7">
+      <created>1661033032800</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1661033032800</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,6 +169,7 @@
     <MESSAGE value="Cleaning up..." />
     <MESSAGE value="Add docs." />
     <MESSAGE value="Add docs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add docs" />
+    <MESSAGE value="Release 1.7" />
+    <option name="LAST_COMMIT_MESSAGE" value="Release 1.7" />
   </component>
 </project>
