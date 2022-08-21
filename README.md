@@ -90,51 +90,50 @@ The artifact can be found at Maven Central:
 ### Elements
 
 ```java
->>>
-
->>>Element carbon=Element("C"); // Declare Element from its symbol
+Element carbon = Element("C"); // Declare Element from its symbol
         
-        >>>System.out.println(carbon);
-        Carbon{atomicNumber=6.0,elementName='Carbon',elementSymbol='C',atomicMass=12.011,neutrons=6.0,protons=6.0,electrons=6.0,period=2.0,group=14.0,phase='solid',radioactive=false,natural=true,metal=false,nonmetal=true,metalloid=false,type='Nonmetal',atomicRadius='0.91',electronegativity='2.55',firstIonization='11.2603',density=2.27,meltingPoint=3948.15,boilingPoint=4300.0,isotopes=7.0,discoverer='Prehistoric',specificHeat=0.709,shells=2.0,valence=4.0,config='[He] 2s2 2p2',massNumber=12.0}
+System.out.println(carbon); // Carbon{atomicNumber=6.0,elementName='Carbon',elementSymbol='C',atomicMass=12.011,neutrons=6.0,protons=6.0,electrons=6.0,period=2.0,group=14.0,phase='solid',radioactive=false,natural=true,metal=false,nonmetal=true,metalloid=false,type='Nonmetal',atomicRadius='0.91',electronegativity='2.55',firstIonization='11.2603',density=2.27,meltingPoint=3948.15,boilingPoint=4300.0,isotopes=7.0,discoverer='Prehistoric',specificHeat=0.709,shells=2.0,valence=4.0,config='[He] 2s2 2p2',massNumber=12.0}
 
-        >>>System.out.println(carbon.atomicMass)
-        12.011
+System.out.println(carbon.atomicMass) // 12.011
 ```
 
 ### Compounds
 
 ```java
->>>
+Compound moronicAcid = new Compound("C30H46O3"); // Moronic acid (3-oxoolean-18-en-28-oic acid) is a natural triterpene
 
->>>Compound moronicAcid=new Compound("C30H46O3"); // Moronic acid (3-oxoolean-18-en-28-oic acid) is a natural triterpene
+System.out.println(moronicAcid.humanReadableOccurrences); // {Oxygen=3,Hydrogen=46,Carbon=30}
 
-        >>>System.out.println(moronicAcid.humanReadableOccurrences);
-        {Oxygen=3,Hydrogen=46,Carbon=30}
-
-        >>>System.out.println(moronicAcid.getMolarMass());
-        454.695
-
-        >>>System.out.println(moronicAcid.getPercentCompositionByMass(new Element("O"))); // Get percentage composition by mass of a constituent element of choice
-        10.555866
+System.out.println(moronicAcid.getMolarMass()); // 454.695
+        
+System.out.println(moronicAcid.getPercentCompositionByMass(new Element("O"))); // 10.555866
 ```
 
 ### Stoichiometric Conversions
 
 ```java
->>>
+var water = new Compound("H2O"); // Instantiate a water compound
 
->>>var water=new Compound('H2O');
+System.out.println(water.formula); // H2O
+        
+// Accepted inputs: grams, moles, and molecules
+System.out.println(water.getAmounts("Molecules", 2e+24)); // {Grams=59.8505,Molecules=2.0E24,Moles=3.3222592}
+```
 
-        >>>System.out.println(water.formula);
-        H2O
+### Balancing Chemical Equations
 
-        >>>System.out.println(water.getAmounts("Molecules",2e+24)); // Accepted inputs: grams, moles, and molecules
-        {Grams=59.8505,Molecules=2.0E24,Moles=3.3222592}
+```java
+var photosynthesis = new Reaction("CO2 + H2O --> C6H12O6 + O2"); // Reactions delimited by "-->"
+        
+//Automatic balancing
+System.out.println(photosynthesis.equation); // 6CO2 + 6H2O --> C6H12O6 + 6O2
+
+System.out.println(EquationBalancerUtil.isBalanced(photosynthesis)); // true
 ```
 
 ## Citing
 
-If you use [Monomer]() in your scientific work, please consider citing:
+If you use [Monomer](https://github.com/elonlit/Monomer) in your scientific work, please consider citing:
 
 |     E. Litman, *Monomer* - An object-oriented cheminformatics library, 2022\-- . Available at:
 [https://github.com/elonlit/monomer](https://github.com/elonlit/monomer).

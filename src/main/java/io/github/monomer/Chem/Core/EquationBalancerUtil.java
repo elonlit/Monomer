@@ -1,5 +1,7 @@
 package io.github.monomer.Chem.Core;
 
+import io.github.monomer.Chem.Reactions.Reaction;
+
 import java.util.Collections;
 import java.util.Hashtable;
 import java.util.LinkedList;
@@ -171,6 +173,185 @@ public final class EquationBalancerUtil {
                 limitleft--;
             }
         }
+        }
+        int r = limitright;
+        for(int i=0; i<r; i++) {
+            for(int j=i+1; j<r; j++) {
+                if(rout[i].equals(rout[j])) {
+                    rout1[i] = rout1[i] + rout1[j];
+                    rout1[j] = 0;
+                    rout[j] = "xyzz";
+                    limitright--;
+                }
+            }
+        }
+
+        int res = 0;
+        for(int i=0; i<lout.length; i++) {
+            for(int j=0;j<rout.length;j++) {
+                if(lout[i].equals(rout[j])) {
+                    if(lout1[i] != rout1[j]) {
+                        res++;
+                    }
+                }
+            }
+        }
+        return res == 0;
+    }
+
+    public static boolean isBalanced(Reaction reaction) {
+        String equation = reaction.equation;
+        String[] data = equation.split("-->");
+        String left = data[0].strip();
+        String right = data[1].strip();
+        int limitleft=0,limitright=0;
+        for(int i=0;i<left.length();i++)
+        {
+            if(Character.isUpperCase(left.charAt(i)))
+                limitleft++;
+        }
+        for(int i=0;i<right.length();i++)
+        {
+            if(Character.isUpperCase(right.charAt(i)))
+                limitright++;
+        }
+
+        String plus = "\\+";
+        String[] Left = left.split(plus);
+        String[] Right =right.split(plus);
+        String[] lout =new String[limitleft];
+        int[] lout1 =new int[limitleft];
+
+        String[] rout =new String[limitright];
+        int[] rout1 =new int[limitright];
+        int lind=0, rind=0;
+        for (String l : Left) {
+            int multiplier = 1;
+
+            for (int j = 0; j < l.length(); j++) {
+                char s = l.charAt(j);
+                if (Character.isDigit(s) && multiplier == 1) {
+                    multiplier = Character.getNumericValue(s);
+                    if (Character.isDigit(l.charAt(j + 1))) {
+                        j++;
+                        while (true) {
+                            if (j < l.length() && Character.isDigit(l.charAt(j))) {
+                                multiplier = multiplier * 10 + Character.getNumericValue(l.charAt(j));
+                                j++;
+
+                            } else {
+                                j--;
+                                break;
+                            }
+                        }
+                    }
+                }
+                if (Character.isUpperCase(s)) {
+                    int k = j + 1;
+                    String temp = s + "";
+                    while (true) {
+                        if (k < l.length()) {
+                            if (Character.isLowerCase(l.charAt(k))) {
+                                temp = temp + l.charAt(k);
+                            }
+                            if (Character.isUpperCase(l.charAt(k)) || Character.isDigit(l.charAt(k))) {
+                                break;
+                            }
+                            k++;
+                        } else
+                            break;
+                    }
+
+                    lout[lind] = temp;
+                    int coff = 1;
+                    if (k < l.length())
+                        if (Character.isDigit(l.charAt(k))) {
+                            coff = Character.getNumericValue(l.charAt(k));
+                            k++;
+                            while (true) {
+                                if (k < l.length() && Character.isDigit(l.charAt(k))) {
+                                    coff = coff * 10 + Character.getNumericValue(l.charAt(k));
+                                    k++;
+
+                                } else
+                                    break;
+                            }
+                        }
+                    lout1[lind] = coff * multiplier;
+                    j = k - 1;
+                    lind++;
+                }
+            }
+        }
+        for (String r : Right) {
+            int multiplier = 1;
+
+            for (int j = 0; j < r.length(); j++) {
+                char s = r.charAt(j);
+                if (Character.isDigit(s) && multiplier == 1) {
+                    multiplier = Character.getNumericValue(s);
+                    if (Character.isDigit(r.charAt(j + 1))) {
+                        j++;
+                        while (true) {
+                            if (j < r.length() && Character.isDigit(r.charAt(j))) {
+                                multiplier = multiplier * 10 + Character.getNumericValue(r.charAt(j));
+                                j++;
+
+                            } else {
+                                j--;
+                                break;
+                            }
+                        }
+                    }
+                }
+                if (Character.isUpperCase(s)) {
+                    int k = j + 1;
+                    String temp = s + "";
+                    while (true) {
+                        if (k < r.length()) {
+                            if (Character.isLowerCase(r.charAt(k))) {
+                                temp = temp + r.charAt(k);
+                            }
+                            if (Character.isUpperCase(r.charAt(k)) || Character.isDigit(r.charAt(k))) {
+                                break;
+                            }
+                            k++;
+                        } else
+                            break;
+                    }
+
+                    rout[rind] = temp;
+                    int coff = 1;
+                    if (k < r.length())
+                        if (Character.isDigit(r.charAt(k))) {
+                            coff = Character.getNumericValue(r.charAt(k));
+                            k++;
+                            while (true) {
+                                if (k < r.length() && Character.isDigit(r.charAt(k))) {
+                                    coff = coff * 10 + Character.getNumericValue(r.charAt(k));
+                                    k++;
+
+                                } else
+                                    break;
+                            }
+                        }
+                    rout1[rind] = coff * multiplier;
+                    j = k - 1;
+                    rind++;
+
+                }
+            }
+        }
+        for(int i=0; i<limitleft; i++) {
+            for(int j=i+1; j<limitleft; j++) {
+                if(lout[i].equals(lout[j]))
+                {
+                    lout1[i]=lout1[i]+lout1[j];
+                    lout1[j]=0;
+                    lout[j]="xyzz";
+                    limitleft--;
+                }
+            }
         }
         int r = limitright;
         for(int i=0; i<r; i++) {

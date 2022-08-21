@@ -88,7 +88,7 @@ public class Element {
 
         String filePath = new File("").getAbsolutePath();
 
-        BufferedReader reader = new BufferedReader(new FileReader(filePath + "/src/main/java/com/github/monomer/Chem/Core/PeriodicTable.csv"));
+        BufferedReader reader = new BufferedReader(new FileReader(filePath + "/src/main/java/io/github/monomer/Chem/Core/PeriodicTable.csv"));
         ArrayList<String> lines = new ArrayList<>();
         String line;
         while ((line = reader.readLine()) != null) {
